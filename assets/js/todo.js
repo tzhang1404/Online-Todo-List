@@ -23,7 +23,7 @@ $("input").on("keypress", function(event){
 		//enter pressed
 		var newTask = $(this).val();
 		if(newTask.length > 0){
-			var newHTML = "<li><span>X </span>" + newTask + "</li>";
+			var newHTML = "<li><span><i class='fas fa-trash-alt'></i></span>" + newTask + "</li>";
 			$("ul").append(newHTML);
 			$(this).val(""); //clear the input field
 		}
